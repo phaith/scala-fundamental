@@ -1,0 +1,53 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+.idea_modules/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# sbt
+lib_managed/
+project/boot/
+project/build/target/
+project/plugins/target/
+project/plugins/lib_managed/
+project/plugins/src_managed/
+.history
+
+# editor backup
+.*.swp
+*~
+
+# tradconnect logs directory
+logs/
+
+#vs
+bin/
+obj/
+Debug/
+Release/
+out/
+*.suo
+.vs/
+
+hostkey.ser
+
+tcredisservice2/dump/
+
+.metals/
+.bloop/
+.antlr/
+.ionide/
+.vscode/
+
