@@ -14,8 +14,9 @@ class Ex5Test extends AnyFlatSpec with Matchers {
       User(5, "Yoda"),
       User(6, "Timmy"),
     )
-    Ex5.findById(l, 5) shouldEqual User(5, "Yoda")
-    Ex5.findById(l, 2) shouldEqual User(2, "Jimmy")
+    Ex5.findById(l, 5) shouldEqual Some(User(5, "Yoda"))
+    Ex5.findById(l, 2) shouldEqual Some(User(2, "Jimmy"))
+    Ex5.findById(l, 0) shouldEqual None
   }
 
 }
