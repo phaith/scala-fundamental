@@ -53,10 +53,12 @@ multiply(2, 3) shouldEqual 6
 multiply(-4, 5) shouldEqual -20
 
 calc(1, 2, plus) shouldEqual 3
-calc(8, 2, minus) shouldEqual 4
-calc(8, 2, multiply) shouldEqual 0
+calc(8, 2, minus) shouldEqual 6
+calc(8, 2, multiply) shouldEqual 16
 
 calc(1, 2, _ + _) shouldEqual 3
+calc(8, 2, {(x,y) => x - y}) shouldEqual 6
+calc(8, 2, _ * _) shouldEqual 16
 calc(8, 2, _ / _) shouldEqual 4
 calc(8, 2, _ % _) shouldEqual 0
 
